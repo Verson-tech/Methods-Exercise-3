@@ -103,6 +103,7 @@ namespace Methods_exercise_3
         public static void CheckRange()
         //7. Write a method to check if an integer (from the user) is in the range -10 to 10
         {
+            Console.WriteLine("\n************************** 7 *****************************");
             Console.WriteLine("Enter a number in the range -10 to 10:");
             int userInput = Int32.Parse(Console.ReadLine());
             if (userInput >= -10 && userInput<= 10)
@@ -117,6 +118,7 @@ namespace Methods_exercise_3
         public static void DisplayTable()
         //8. Write a method to display a given integer's multiplication table(from 1 to 12)
         {
+            Console.WriteLine("\n************************** 8 *****************************");
             Console.WriteLine("Enter a number in order to display a multiplication table:");
             int numberInput = Int32.Parse(Console.ReadLine());
             for (int i = 1; i <= 12 ; i++)
