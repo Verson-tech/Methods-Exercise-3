@@ -3,3 +3,8 @@
 MyMethods.OutputThousand();
 MyMethods.ByThree();
 MyMethods.EqualityTest();
+MyMethods.EvenOdd();
+MyMethods.PositiveNegative();
+MyMethods.DetermineAge();
+MyMethods.CheckRange();
+
