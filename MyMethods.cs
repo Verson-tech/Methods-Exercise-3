@@ -38,9 +38,9 @@ namespace Methods_exercise_3
         public static void EqualityTest()
         {
             Console.WriteLine("\n************************** 3 *****************************");
-            Console.WriteLine("\nType the first value to be checked:");
+            Console.WriteLine("\nType the first number value to be checked:");
             int firstValue = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("\nType the second value to be checked:");
+            Console.WriteLine("\nType the second number value to be checked:");
             int secondValue = Int32.Parse(Console.ReadLine());
             if (firstValue != secondValue)
             {
@@ -114,7 +114,15 @@ namespace Methods_exercise_3
                 Console.WriteLine("Your number is out of the range.");
             }
         }
-
+        public static void DisplayTable()
         //8. Write a method to display a given integer's multiplication table(from 1 to 12)
+        {
+            Console.WriteLine("Enter a number in order to display a multiplication table:");
+            int numberInput = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i <= 12 ; i++)
+            {        
+                Console.WriteLine("{0} x {1} = {2} \n" , numberInput, i, numberInput * i);
+            }  
+        }
     }
 }

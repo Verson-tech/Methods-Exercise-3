@@ -7,4 +7,5 @@ MyMethods.EvenOdd();
 MyMethods.PositiveNegative();
 MyMethods.DetermineAge();
 MyMethods.CheckRange();
+MyMethods.DisplayTable();
 
