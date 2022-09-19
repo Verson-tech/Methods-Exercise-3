@@ -146,7 +146,9 @@ namespace Methods_exercise_3
             for (int i = 1; i <= 12 ; i++)
             {        
                 Console.WriteLine("{0} x {1} = {2} \n" , numberInput, i, numberInput * i);
-            }  
+                // || another solution:
+                //Console.WriteLine($"{numberInput} * {i} = {numberInput * i}");
+            }
         }
     }
 }
