@@ -86,19 +86,41 @@ namespace Methods_exercise_3
         //6. Write a method to read the age of a candidate and determine whether they can vote. 
         public static void DetermineAge()
         {
-            Console.WriteLine("\n************************** 6 *****************************");
-            
-            Console.WriteLine("Please, enter your age:");
-            int age = Int32.Parse(Console.ReadLine());
+            //1-st solution:
+            //Console.WriteLine("\n************************** 6 *****************************");
 
-            if (age >= 18)
+            //Console.WriteLine("Please, enter your age:");
+            //int age = Int32.Parse(Console.ReadLine());
+
+            //if (age >= 18)
+            //{
+            //    Console.WriteLine("You are eligible to vote.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are not eligible to vote.");
+            //}
+
+            //2-d solution:
+            double yourAge = 0;
+            
+            bool isParsable;
+            do
             {
-                Console.WriteLine("You are eligible to vote.");
-            }
-            else
-            {
-                Console.WriteLine("You are not eligible to vote.");
-            }
+                Console.WriteLine($"Please, enter your age:");
+                var response = Console.ReadLine();
+                isParsable = double.TryParse(response, out yourAge);
+
+                Console.WriteLine($"You entered {response}.");
+                if(Convert.ToInt32(response) >= 18)
+                {
+                    Console.Write("You are eligible to vote.");
+                }
+                else
+                {
+                    Console.Write("You are not eligible to vote.");
+                }              
+            } while (isParsable == false);
         }
         public static void CheckRange()
         //7. Write a method to check if an integer (from the user) is in the range -10 to 10
